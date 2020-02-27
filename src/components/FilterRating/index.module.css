@@ -1,0 +1,20 @@
+.rating {
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.rating span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .7rem;
+  cursor: pointer;
+}
+
+.rating p {
+  padding: .5rem 0;
+}
+
+.selected {
+  background-color: rgba(0, 0, 255, .4);
+}

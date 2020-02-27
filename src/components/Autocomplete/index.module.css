@@ -1,0 +1,43 @@
+.wrapper {
+  /* width: 100%; */
+}
+
+.input {
+  border: 1px solid #999;
+  padding: 1.2rem 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 100%;
+}
+
+.noSuggestions {
+  color: #999;
+  padding: 1rem;
+}
+
+.suggestions {
+  border: 1px solid #999;
+  border-top-width: 0;
+  list-style: none;
+  margin-top: 0;
+  max-height: 143px;
+  overflow-y: auto;
+  padding-left: 0;
+  width: calc(300px + 1rem);
+}
+
+.suggestions li {
+  padding: 1rem;
+}
+
+.suggestionActive,
+.suggestions li:hover {
+  background-color: #008f68;
+  color: #fae042;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.suggestions li:not(:last-of-type) {
+  border-bottom: 1px solid #999;
+}

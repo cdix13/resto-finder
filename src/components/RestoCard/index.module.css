@@ -1,0 +1,52 @@
+.wrapper {
+  padding: .6rem 0;
+  display: flex;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  transition: all .5s ease;
+}
+
+.wrapper:hover {
+  box-shadow: 0 12px 8px rgba(0, 0, 0, .25);
+  transform: scale(1.02);
+}
+
+.image {
+  border-radius: 8px;
+  width: 90px;
+  height: 90px;
+}
+
+.info {
+  padding: 0 .8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {}
+
+.title h3 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.title p {
+  font-size: .9rem;
+}
+
+.body {
+  font-size: 1.6rem;
+  margin: .5rem 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer p {
+  font-size: 1rem;
+}

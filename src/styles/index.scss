@@ -1,0 +1,149 @@
+@mixin fontFace($family, $src, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $family;
+    src: url('#{$src}.otf') format('opentype');
+    font-style: $style;
+    font-weight: $weight;
+  }
+}
+
+@import "colors";
+
+@include fontFace('Futura PT', '../fonts/FuturaPTLight', 100);
+@include fontFace('Futura PT', '../fonts/FuturaPTBook', 300);
+@include fontFace('Futura PT', '../fonts/FuturaPTMedium', 400);
+@include fontFace('Futura PT', '../fonts/FuturaPTDemi', 500);
+@include fontFace('Futura PT', '../fonts/FuturaPTBold', 600);
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Futura PT';
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  background-color: #ddd;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.capital-case {
+  text-transform: capitalize !important;
+}
+
+.lower-case {
+  text-transform: lowercase !important;
+}
+
+.upper-case {
+  text-transform: uppercase !important;
+}
+
+@for $i from 0 through 20 {
+  .p-#{$i} {
+    padding: 8px * $i !important;
+  }
+
+  .py-#{$i} {
+    padding-top: 8px * $i !important;
+    padding-bottom: 8px * $i !important;
+  }
+
+  .pt-#{$i} {
+    padding-top: 8px * $i !important;
+  }
+
+  .pb-#{$i} {
+    padding-bottom: 8px * $i !important;
+  }
+
+  .px-#{$i} {
+    padding-left: 8px * $i !important;
+    padding-right: 8px * $i !important;
+  }
+
+  .pl-#{$i} {
+    padding-left: 8px * $i !important;
+  }
+
+  .pr-#{$i} {
+    padding-right: 8px * $i !important;
+  }
+
+  .m-#{$i} {
+    margin: 8px * $i !important;
+  }
+
+  .my-#{$i} {
+    margin-top: 8px * $i !important;
+    margin-bottom: 8px * $i !important;
+  }
+
+  .mt-#{$i} {
+    margin-top: 8px * $i !important;
+  }
+
+  .mb-#{$i} {
+    margin-bottom: 8px * $i !important;
+  }
+
+  .mx-#{$i} {
+    margin-left: 8px * $i !important;
+    margin-right: 8px * $i !important;
+  }
+
+  .ml-#{$i} {
+    margin-left: 8px * $i !important;
+  }
+
+  .mr-#{$i} {
+    margin-right: 8px * $i !important;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+.bg-btn-red-active {
+  color: $white !important;
+  background-color: $red !important;
+  font-weight: bold;
+}
+
+.bg-btn-red {
+  color: $white;
+  background-color: $red;
+  border-radius: 8px;
+  padding: 0.7rem 1.2rem;
+
+  &:hover,
+  &:focus {
+    background-color: rgba(255, 0, 0, 0.5);
+  }
+}
+
+.bg-black {
+  background-color: $black !important;
+
+  &:hover,
+  &:focus {
+    background-color: $black !important;
+  }
+}
+
+.bg-red {
+  background-color: #dd4b39 !important;
+
+  &:hover,
+  &:focus {
+    background-color: $red !important;
+  }
+}

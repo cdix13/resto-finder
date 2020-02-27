@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+header {
+  padding: 0 3rem;
+  font-size: 2rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  margin-bottom: 1rem;
+}
+
+main {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) 1fr); */
+  grid-template-columns: 300px 1fr;
+  grid-gap: 1rem;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+}
+
+.action {
+  padding: 1rem 0;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.action button {
+  font-size: 1.2rem;
+}
+
+.filter {
+  margin: 1rem 0;
+}
+
+.filter button {
+  font-size: 1rem;
+  margin: .3rem;
+  padding: .5rem .9rem;
+}
+
+.filter .sort-active {
+  background-color: blue;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.info {
+  margin: 2rem 0;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, .3);
+  border-radius: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.info p {
+  padding: .5rem 0;
+}
+
+@media only screen and (max-width: 700px) {
+
+  .sidebar,
+  .content {
+    grid-column: span 2;
   }
 }
