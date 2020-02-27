@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/resto-finder%60/static/css/main.b253d4ba.chunk.css",
+    "main.js": "/resto-finder%60/static/js/main.89cc5a08.chunk.js",
+    "main.js.map": "/resto-finder%60/static/js/main.89cc5a08.chunk.js.map",
+    "runtime-main.js": "/resto-finder%60/static/js/runtime-main.9b18ab43.js",
+    "runtime-main.js.map": "/resto-finder%60/static/js/runtime-main.9b18ab43.js.map",
+    "static/js/2.c86de4dd.chunk.js": "/resto-finder%60/static/js/2.c86de4dd.chunk.js",
+    "static/js/2.c86de4dd.chunk.js.map": "/resto-finder%60/static/js/2.c86de4dd.chunk.js.map",
+    "index.html": "/resto-finder%60/index.html",
+    "precache-manifest.b51e68b11312b1cbd2f6e66966f8fdee.js": "/resto-finder%60/precache-manifest.b51e68b11312b1cbd2f6e66966f8fdee.js",
+    "service-worker.js": "/resto-finder%60/service-worker.js",
+    "static/css/main.b253d4ba.chunk.css.map": "/resto-finder%60/static/css/main.b253d4ba.chunk.css.map",
+    "static/js/2.c86de4dd.chunk.js.LICENSE.txt": "/resto-finder%60/static/js/2.c86de4dd.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/resto-finder%60/static/media/FuturaPTMedium.bd99f124.otf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9b18ab43.js",
+    "static/js/2.c86de4dd.chunk.js",
+    "static/css/main.b253d4ba.chunk.css",
+    "static/js/main.89cc5a08.chunk.js"
+  ]
+}
